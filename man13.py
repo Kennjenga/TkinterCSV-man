@@ -188,7 +188,6 @@ def GL_code():
 
     def new_submit():
         message_var.set("")
-        Account_var.set('0')
         gl_contra_code = GL_code_var.get()
         account = Account_var.get()
         if not account or (not account.isdigit() and account != '0'):
@@ -267,7 +266,7 @@ GL_contra.place(x=10, y=200)
 
 options_frame.pack(side=tk.LEFT, fill="y")
 options_frame.pack_propagate(False)
-options_frame.configure(width=100, height=100)
+options_frame.configure(width=100)
 
 main_frame.pack(side=tk.LEFT, expand=True, fill="both")
 main_frame.configure(height=400, width=500)
